@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main.css" />
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <title>My Profile</title>
+  </head>
+  <body>
+    <div class="container">
+     <header>
+       </video>
+        <nav class="navbar">
+          <div class="logo">
+            <span>TienZ</span>
+            <span>X</span>
+          </div>
+          <ul class="link">
+            <li class="link-item">
+              <a  href="./../index.html">HOME</a>
+            </li>
+            <li class="link-item">
+              <a href="./../store/index.html">STORE</a>
+            </li>
+            <li class="link-item">
+              <a href="./../about us/about.html">ABOUT</a>
+            </li>
+            <li class="link-item">
+              <a href="">CONTACT</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <div class="product__noti">
+        <span>SAVE !</span>
+        </div>
+            <span id="ityped"></span>
+          <div class="contact">
+               <div class="contact__info">
+                  <div class="contact__info-input">
+                     <div class="input contact__info-name">
+                        <i class="fas fa-file-signature"></i>
+                        <label for="name"> Login name</label><br>
+                        <input  id="name" value = " " id="name" type="text" placeholder="Your name">
+                     </div>
+                     <div class="input contact__info-mail">
+                        <i class="far fa-envelope"></i>
+                        <label for=""> Mail</label><br>
+                        <input id="Mail" type="text" placeholder="Your mail">
+                     </div>
+                     <div class="input contact__info-Phone">
+                        <i class="fas fa-phone"></i>
+                        <label for=""> Phone</label><br>
+                        <input id="Phone" type="text" placeholder="Your phone" >
+                     </div>
+                     <div class="contact__btn">
+                          <button href="./../index.html" type="button" class="btn btn-default">Save profile</button>
+                      </div>
+                  </div>
+                  <div class="contact__info-mess">
+                     <div class="contact__info-input">
+                     <div class="input contact__info-add">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <label for="name">Address</label><br>
+                        <input id="Address" value = " " id="name" type="text" placeholder="Address">
+                     </div>
+                     <div class="input contact__info-Gender">
+                        <i class="fas fa-venus-mars"></i>
+                        <label for="">Gender</label><br>
+                        <input id="Gender" type="text" placeholder="Gender">
+                     </div>
+                     <div class="input contact__info-Birthday">
+                         <i class="fas fa-birthday-cake"></i>
+                        <label for="">Birthday</label><br>
+                        <input id="birtday" type="text" placeholder="Birthday" >
+                     </div>
+                     
+                  </div>
+                  </div>
+               </div>
+          </div>
+      </main>
+    </div>
+    <script src="https://unpkg.com/ityped@1.0.2"></script>
+    <script src="./main.js"></script>
+    <script>
+      let newArray = []
+      let array = 'Nguyen Thanh Tung'
+      let newString = ''
+      for(let i = 0; i<array.length; i++) {
+        newArray.push(array[i])
+      }
+      for(let j = newArray.length; j = 0 ; j--) {
+        newString+=newArray[j]
+        console.log(newArray[j])
+      }
+      console.log(newString)
+    </script>
+  </body>
+</html>

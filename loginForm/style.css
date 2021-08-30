@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuggles&display=swap');
+.form {
+  margin: 100px 100px;
+  display: flex;
+  width: 80%;
+  padding: 20px;
+  align-items: center;
+  border-radius: 7px;
+  box-shadow: -10px -10px 10px rgba(0, 0, 0, 0.473);
+  overflow: hidden;
+}
+.form .form__img {
+  position: relative;
+  width: 90%;
+  height: 90%;
+}
+.form .form__img img {
+  width: inherit;
+  height: inherit;
+  border-radius: 6px;
+}
+.form .form__img span {
+  position: absolute;
+  width: inherit;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    to left,
+    rgba(200, 185, 185, 0.438),
+    rgba(14, 184, 226, 0.664)
+  );
+  border-radius: 6px;
+}
+.form__login {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+.logo {
+  position: relative;
+  top: -100px;
+  left: 70px;
+}
+.logo span:nth-child(1) {
+  margin-left: 20px;
+  font-family: 'Fuggles', cursive;
+  color: rgba(14, 184, 226, 0.925);
+  font-size: 50px;
+  letter-spacing: 4px;
+}
+.logo span:nth-child(2) {
+  font-family: 'Fuggles', cursive;
+  position: absolute;
+  color: rgba(14, 184, 226, 0.925);
+  top: 17px;
+  font-weight: 600;
+  left: 110px;
+  font-size: 50px;
+}
+.logo span:nth-child(3) {
+  position: absolute;
+  color:rgba(0, 0, 0, 0.473);
+  top: 80px;
+  font-weight: 600;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 600;
+  left: -80px;
+  font-size: 22px;
+  width: max-content;
+}
+input {
+  border: none;
+  border-radius: 50px;
+  padding: 12px 20px;
+  outline: none;
+  margin: 10px 0 20px 0;
+  width: 80%;
+  border: 0.1px solid;
+  border-radius: 4px;
+  transition: 0.4s ease;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid rgb(14, 184, 226);
+  font-size: 18px;
+}
+  input:focus {
+  font-size: 16px;
+}
+.form__login-email label,
+.form__login-pass label {
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 600;
+}
+
+.form__login-pass input {
+}
+.form__login-checkbox {
+  font-size: 20px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 600;
+}
+.checkbox {
+  display: flex;
+  position: fixed;
+  right: 440px;
+  top: 550px;
+  width: 260px;
+}
+.checkbox label {
+  position: relative;
+  top: 5px;
+  width: 150px;
+  left: -60px;
+}
+
+.forgetPass {
+  position: fixed;
+  right: 290px;
+  top: 560px;
+}
+.forgetPass a {
+  position: relative;
+  text-decoration: none;
+  color:black
+  
+}
+.forgetPass a:active {
+  transform: translateY(10px);
+}
+.forgetPass a::after {
+  position: absolute;
+  content: '';
+  top: 20px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(
+    to left,
+    rgba(200, 185, 185, 0.164),
+    rgba(14, 184, 226, 0.664)
+  );
+  transition: 0.6s ease;
+}
+.forgetPass a:hover::after {
+  width: 90%;
+}
+.btn__submit {
+  width: 90%;
+}
+.btn__submit a {
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  top: 70px;
+  right: 10px;
+  text-decoration: none;
+  padding: 12px 100px;
+  font-size: 17px;
+  border: none;
+  color: #fff;
+  transition: 0.8s ease;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 5px;
+  background: linear-gradient(
+    to left,
+    rgba(20, 216, 199, 0.438),
+    rgba(170, 197, 204, 0.664)
+  );
+  font-family: 'Times New Roman', Times, serif;
+  width: 100%;
+}
+
+.form__text {
+  position: absolute;
+  top: 440px;
+  left: 50px;
+  color: white;
+  z-index: 100;
+  opacity: 0.9;
+}
+.form__text h3 {
+  font-size: 40px;
+  font-weight: 600;
+  font-family: 'Courier New', Courier, monospace;
+}
+.form__text p {
+  font-size: 25px;
+  margin-left: 90px;
+  letter-spacing: 2px;
+  line-height: 30px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 600;
+}
+.btn__submit a{
+  display: inline-block;
+  position: relative;
+  color: white;
+  padding: 14px 20px;
+}
+.btn__submit a::after {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    to left,
+    rgba(14, 184, 226, 0.938),
+    rgb(200, 185, 185)
+  );
+  z-index: -1;
+  transition: .5s ease;
+  border-radius: 6px;
+}
+.btn__submit a:hover::after {
+  z-index: 100;
+  transform: scale(1.4);
+  opacity: 0;
+}
+.form__login p {
+  color: red;
+  position: relative;
+  top: -30px;
+}
